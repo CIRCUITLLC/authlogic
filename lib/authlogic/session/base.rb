@@ -30,7 +30,7 @@ module Authlogic
       include Persistence
       include Scopes
       include Id
-      include Validation
+      #include Validation
       include PriorityRecord
     end
   end
