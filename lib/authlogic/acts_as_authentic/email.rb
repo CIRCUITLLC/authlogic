@@ -101,9 +101,9 @@ module Authlogic
         def self.included(klass)
           klass.class_eval do
             if validate_email_field && email_field
-              validates_length_of email_field, validates_length_of_email_field_options
-              validates_format_of email_field, validates_format_of_email_field_options
-              validates_uniqueness_of email_field, validates_uniqueness_of_email_field_options
+              #validates_length_of email_field, validates_length_of_email_field_options
+              #validates_format_of email_field, validates_format_of_email_field_options
+              #validates_uniqueness_of email_field, validates_uniqueness_of_email_field_options
             end
           end
         end
